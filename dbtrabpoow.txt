@@ -1,0 +1,61 @@
+
+
+begin;
+create table usuario(
+	codusu serial,
+	nome varchar(100),
+	telefone varchar(15), 
+	email varchar(100),
+	senha varchar(30),
+	primary key (codusu)
+);
+
+
+create table endereco(
+	codendereco serial,
+	rua varchar(80),
+	bairro varchar(80),
+	cep varchar(9),
+	cidade varchar(30),
+ 	estado varchar(20),
+	primary key (codendereco)
+);
+
+create table perfil(
+	codperfil serial,
+	genero varchar(20),
+	idade varchar(10),
+	pet varchar(10),
+	observacao varchar(100),
+	primary key (codperfil)
+);
+
+create table vaga(
+	codvaga serial,
+	codendereco int,
+	codperfil int,
+	titulo varchar(50),
+	dormitorio int,
+	banheiro int,
+	observacao varchar(100),
+	area int,
+	garagem int,
+	numinteres int,   --- mudança
+	primary key (codvaga),
+	foreign key (codendereco) references endereco(codendereco),
+	foreign key (codperfil) references perfil(codperfil)
+);
+
+
+
+create table relacao(
+	tipo varchar(10),
+	codusu int,
+	codvaga int,
+	primary key (codusu, codvaga),
+	foreign key (codvaga) references vaga(codvaga),
+	foreign key (codusu) references usuario(codusu)
+);
+
+
+commit;
