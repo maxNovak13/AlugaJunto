@@ -9,5 +9,5 @@ telefone do usuário interessado.
 Além disso, quem estiver ofertando a vaga inclui um perfil do companheiro
 que se busca para dividir, assim pode-se incluir informações como gênero, idade e
 se deve ter afinidade com pets, por exemplo, alguém que não gosta de ter animais
-de estimação, ou não gosta de algum específico, pode colocar isso no perfil, a fim
-de atrair alguém que se encaixe e facilite o convívio
+de estimação, ou não gosta de algo em específico, pode colocar isso no perfil, a fim
+de atrair alguém que se encaixe no perfil desejado e facilite o convívio
